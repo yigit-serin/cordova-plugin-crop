@@ -55,8 +55,9 @@
       </feature>
     </config-file>
 
-    <framework src="src/android/android-crop-custom.aar" custom="true" />
-
+    <resource-file src="src/android/android-crop-custom.aar" target="libs/android-crop-custom.aar" />
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
     </config-file>
